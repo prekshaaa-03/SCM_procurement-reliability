@@ -33,14 +33,14 @@ def classify_risk(supplier_stats):
 
     def classify(delay):
         if delay is None:
-            return "⚪ Unknown"
+            return "Unknown"
 
         if delay <= 2:
-            return "🟢 Low Risk"
+            return "Low Risk"
         elif delay <= 5:
-            return "🟡 Medium Risk"
+            return "Medium Risk"
         else:
-            return "🔴 High Risk"
+            return "High Risk"
 
     supplier_stats['risk'] = supplier_stats['avg_delay'].apply(classify)
 

@@ -1,11 +1,14 @@
-from sklearn.linear_model import LinearRegression
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import mean_squared_error
 import numpy as np
 
+# Features used for training – must match what the UI predictor sends
+FEATURE_COLS = ['avg_cost', 'on_time_rate']
+
 def train_model(supplier_stats):
     # ---------------- FEATURES & TARGET ---------------- #
-    X = supplier_stats[['avg_cost', 'rating', 'on_time_rate']]
+    X = supplier_stats[FEATURE_COLS]
     y = supplier_stats['avg_delay']
 
     # ---------------- HANDLE MISSING VALUES ---------------- #
@@ -17,8 +20,8 @@ def train_model(supplier_stats):
         X, y, test_size=0.2, random_state=42
     )
 
-    # ---------------- TRAIN MODEL ---------------- #
-    model = LinearRegression()
+    # ---------------- TRAIN MODEL (Random Forest for better accuracy) -------- #
+    model = RandomForestRegressor(n_estimators=100, random_state=42)
     model.fit(X_train, y_train)
 
     # ---------------- PREDICTION ---------------- #
