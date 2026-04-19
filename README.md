@@ -1,6 +1,6 @@
 # ⚙️ Procurement Reliability Dashboard
 
-## 📌 1. Problem Statement
+##  1. Problem Statement
 
 Procurement systems often rely on basic metrics like cost or supplier reputation, without systematically evaluating **delivery reliability, consistency, and risk**. This leads to:
 
@@ -13,7 +13,7 @@ The objective of this project is to build a **data-driven procurement analytics 
 
 ---
 
-## 🎯 2. Objective
+##  2. Objective
 
 To design and implement a system that:
 
@@ -25,7 +25,7 @@ To design and implement a system that:
 
 ---
 
-## 🧠 3. Solution Overview
+##  3. Solution Overview
 
 We developed a **Procurement Reliability Dashboard** that processes procurement data and transforms it into meaningful insights.
 
@@ -37,7 +37,7 @@ Raw Data → Processing → Feature Engineering → Scoring → ML Prediction �
 
 ---
 
-## 🏗️ 4. System Architecture
+##  4. System Architecture
 
 The project follows a **modular architecture**, ensuring separation of concerns:
 
@@ -51,7 +51,7 @@ Presentation Layer→ Streamlit Dashboard
 
 ---
 
-## 📂 5. Dataset Design
+##  5. Dataset Design
 
 The project uses a **relational dataset with 4 tables**:
 
@@ -83,7 +83,7 @@ The project uses a **relational dataset with 4 tables**:
 
 ---
 
-### 🔥 Key Design Strengths
+###  Key Design Strengths
 
 * ✔ Multi-table relational structure
 * ✔ Realistic procurement flow
@@ -92,7 +92,7 @@ The project uses a **relational dataset with 4 tables**:
 
 ---
 
-## ⚙️ 6. Data Processing
+##  6. Data Processing
 
 ### Key transformations:
 
@@ -115,7 +115,7 @@ The project uses a **relational dataset with 4 tables**:
 
 ---
 
-## 📊 7. Feature Engineering
+##  7. Feature Engineering
 
 For each supplier:
 
@@ -126,7 +126,7 @@ For each supplier:
 
 ---
 
-## 🧮 8. Scoring Model
+##  8. Scoring Model
 
 A composite score is computed using:
 
@@ -138,12 +138,12 @@ Score =
 0.2 × Rating
 ```
 
-### 🔍 Normalization Strategy
+###  Normalization Strategy
 
 * norm_delay = 1 / (1 + avg_delay)
 * norm_cost = 1 / (1 + avg_cost)
 
-### ✅ Why this approach?
+###  Why this approach?
 
 * Prevents division by zero
 * Keeps values bounded (0–1)
@@ -151,7 +151,7 @@ Score =
 
 ---
 
-## 🚦 9. Risk Classification
+##  9. Risk Classification
 
 Suppliers are classified as:
 
@@ -175,7 +175,7 @@ A **Linear Regression model** is used to predict supplier delay based on:
 
 ---
 
-## 📈 11. Visualizations
+##  11. Visualizations
 
 The dashboard includes:
 
@@ -186,12 +186,12 @@ The dashboard includes:
 
 ### 🔹 Advanced Visuals
 
-* Top 10 Suppliers (ranking) 🏆
-* Risk Distribution 🚦
+* Top 10 Suppliers (ranking) 
+* Risk Distribution 
 
 ---
 
-### 🔥 Design Improvement
+###  Design Improvement
 
 Instead of plotting all 100 suppliers (which caused clutter), we:
 
@@ -200,7 +200,7 @@ Instead of plotting all 100 suppliers (which caused clutter), we:
 
 ---
 
-## 🎨 12. UI Design
+##  12. UI Design
 
 The dashboard uses:
 
@@ -216,7 +216,7 @@ The dashboard uses:
 
 ---
 
-## 💡 13. Key Insights Generated
+##  13. Key Insights Generated
 
 The system answers:
 
@@ -227,7 +227,7 @@ The system answers:
 
 ---
 
-## ⭐ 14. Unique Aspects of the Project
+##  14. Unique Aspects of the Project
 
 * ✔ Multi-factor supplier evaluation (not just cost)
 * ✔ Realistic delay handling (no negative delays)
@@ -238,7 +238,7 @@ The system answers:
 
 ---
 
-## 📌 15. Relevance to Problem Statement
+##  15. Relevance to Problem Statement
 
 This project directly addresses the procurement problem by:
 
@@ -249,9 +249,9 @@ This project directly addresses the procurement problem by:
 
 ---
 
-## 🚀 16. Future Improvements
+##  16. Future Improvements
 
-### 📊 Advanced Visualizations
+###  Advanced Visualizations
 
 * Supplier performance by product category
 * Time-series delay trends
@@ -260,7 +260,7 @@ This project directly addresses the procurement problem by:
 
 ---
 
-### 🎨 UI Enhancements
+###  UI Enhancements
 
 * Color-coded rows (risk highlighting)
 * Highlight best supplier
@@ -270,7 +270,7 @@ This project directly addresses the procurement problem by:
 
 ---
 
-### 🤖 ML Enhancements
+###  ML Enhancements
 
 * Classification model for risk prediction
 * More features (supplier type, category)
@@ -279,7 +279,7 @@ This project directly addresses the procurement problem by:
 
 ---
 
-### 🗄️ Data Enhancements
+###  Data Enhancements
 
 * Multiple products per order
 * Supplier specialization mapping
@@ -288,7 +288,7 @@ This project directly addresses the procurement problem by:
 
 ---
 
-## ▶️ 17. How to Run
+##  17. How to Run
 
 ```bash
 python3 -m venv venv
@@ -299,13 +299,15 @@ streamlit run app.py
 
 ---
 
-## 👩‍💻 18. Author
+##  18. Author
 
-**Rachana Ramchandar**
+**Rachana Ramchandar - PES1UG23CS459**
+**Preksha M - PES1UG23CS450**
+**Pranitha G - PES1UG23CS441**
 
 ---
 
-## ✅ 19. Conclusion
+##  19. Conclusion
 
 This project demonstrates how procurement data can be transformed into actionable insights using:
 
