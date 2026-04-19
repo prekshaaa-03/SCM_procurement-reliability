@@ -288,16 +288,19 @@ This project directly addresses the procurement problem by:
 
 ---
 
-##  17. How to Run
+## 17. How to Run
 
-```bash
+# macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-streamlit run app.py
-```
+python3 -m streamlit run app.py
 
----
+# Windows (PowerShell)
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+python -m streamlit run app.py
 
 ##  18. Author
 
