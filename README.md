@@ -308,13 +308,6 @@ venv\Scripts\activate
 
 pip install -r requirements.txt
 
-python -m streamlit run app.py
-
-After running the final command, open:
-
-http://localhost:8501
-
-in your browser to access the application.
 
 ##  18. Author
 
