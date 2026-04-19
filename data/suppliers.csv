@@ -1,0 +1,101 @@
+supplier_id,name,location,rating,supplier_type,primary_category
+1,Supplier 1,Bangalore,4.5,Local,Metals
+2,Supplier 2,Mumbai,4.2,International,Polymers
+3,Supplier 3,Delhi,3.8,Local,Metals
+4,Supplier 4,Chennai,4.0,Local,Industrial Materials
+5,Supplier 5,Hyderabad,3.5,International,Chemicals
+6,Supplier 6,Pune,4.1,Local,Polymers
+7,Supplier 7,Kolkata,3.9,International,Metals
+8,Supplier 8,Ahmedabad,4.3,Local,Packaging
+9,Supplier 9,Jaipur,3.7,Local,Electronics
+10,Supplier 10,Surat,4.4,International,Textiles
+11,Supplier 11,Coimbatore,4.2,Local,Metals
+12,Supplier 12,Kochi,3.6,International,Chemicals
+13,Supplier 13,Indore,4.0,Local,Packaging
+14,Supplier 14,Bhopal,3.9,Local,Polymers
+15,Supplier 15,Patna,3.5,International,Industrial Materials
+16,Supplier 16,Lucknow,4.1,Local,Metals
+17,Supplier 17,Kanpur,3.8,Local,Textiles
+18,Supplier 18,Nagpur,4.2,International,Polymers
+19,Supplier 19,Visakhapatnam,3.7,Local,Chemicals
+20,Supplier 20,Vijayawada,4.3,Local,Packaging
+21,Supplier 21,Mysore,4.0,Local,Metals
+22,Supplier 22,Trichy,3.9,International,Industrial Materials
+23,Supplier 23,Madurai,3.6,Local,Polymers
+24,Supplier 24,Noida,4.4,International,Electronics
+25,Supplier 25,Gurgaon,4.5,Local,Packaging
+26,Supplier 26,Faridabad,3.8,Local,Metals
+27,Supplier 27,Ghaziabad,3.7,International,Chemicals
+28,Supplier 28,Chandigarh,4.3,Local,Industrial Materials
+29,Supplier 29,Amritsar,3.9,Local,Textiles
+30,Supplier 30,Jodhpur,4.1,International,Metals
+31,Supplier 31,Udaipur,3.6,Local,Packaging
+32,Supplier 32,Rajkot,4.2,Local,Polymers
+33,Supplier 33,Vadodara,4.0,International,Chemicals
+34,Supplier 34,Nashik,3.8,Local,Metals
+35,Supplier 35,Aurangabad,3.7,Local,Industrial Materials
+36,Supplier 36,Solapur,4.1,International,Polymers
+37,Supplier 37,Hubli,3.9,Local,Packaging
+38,Supplier 38,Belgaum,4.2,Local,Metals
+39,Supplier 39,Mangalore,3.6,International,Chemicals
+40,Supplier 40,Tirupati,4.3,Local,Industrial Materials
+41,Supplier 41,Warangal,3.7,Local,Polymers
+42,Supplier 42,Guntur,4.0,International,Packaging
+43,Supplier 43,Salem,3.8,Local,Metals
+44,Supplier 44,Erode,3.9,Local,Textiles
+45,Supplier 45,Thoothukudi,3.5,International,Chemicals
+46,Supplier 46,Aligarh,4.1,Local,Industrial Materials
+47,Supplier 47,Meerut,3.8,Local,Polymers
+48,Supplier 48,Agra,4.0,International,Metals
+49,Supplier 49,Varanasi,3.7,Local,Packaging
+50,Supplier 50,Ranchi,4.2,Local,Electronics
+51,Supplier 51,Dhanbad,3.6,International,Chemicals
+52,Supplier 52,Bokaro,3.9,Local,Metals
+53,Supplier 53,Dehradun,4.3,Local,Industrial Materials
+54,Supplier 54,Haridwar,3.8,International,Polymers
+55,Supplier 55,Shimla,4.1,Local,Packaging
+56,Supplier 56,Panaji,4.0,Local,Electronics
+57,Supplier 57,Imphal,3.7,International,Chemicals
+58,Supplier 58,Shillong,3.9,Local,Textiles
+59,Supplier 59,Aizawl,3.6,Local,Polymers
+60,Supplier 60,Kohima,4.2,International,Metals
+61,Supplier 61,Gangtok,3.8,Local,Packaging
+62,Supplier 62,Itanagar,3.7,Local,Industrial Materials
+63,Supplier 63,Raipur,4.1,International,Chemicals
+64,Supplier 64,Bilaspur,3.9,Local,Metals
+65,Supplier 65,Jagdalpur,3.5,Local,Polymers
+66,Supplier 66,Silchar,4.0,International,Packaging
+67,Supplier 67,Tezpur,3.8,Local,Metals
+68,Supplier 68,Tinsukia,3.7,Local,Industrial Materials
+69,Supplier 69,Dibrugarh,4.2,International,Chemicals
+70,Supplier 70,Port Blair,3.9,Local,Packaging
+71,Supplier 71,Kavaratti,3.6,Local,Polymers
+72,Supplier 72,Leh,4.3,International,Metals
+73,Supplier 73,Kargil,3.7,Local,Industrial Materials
+74,Supplier 74,Srinagar,4.1,Local,Packaging
+75,Supplier 75,Jammu,3.8,International,Chemicals
+76,Supplier 76,Udhampur,3.9,Local,Metals
+77,Supplier 77,Anantnag,3.6,Local,Polymers
+78,Supplier 78,Baramulla,4.0,International,Industrial Materials
+79,Supplier 79,Rewa,3.7,Local,Packaging
+80,Supplier 80,Sagar,3.8,Local,Metals
+81,Supplier 81,Gwalior,4.2,International,Chemicals
+82,Supplier 82,Jabalpur,3.9,Local,Industrial Materials
+83,Supplier 83,Satna,3.6,Local,Polymers
+84,Supplier 84,Chhindwara,4.1,International,Packaging
+85,Supplier 85,Akola,3.7,Local,Metals
+86,Supplier 86,Yavatmal,3.8,Local,Industrial Materials
+87,Supplier 87,Amravati,4.0,International,Chemicals
+88,Supplier 88,Latur,3.9,Local,Polymers
+89,Supplier 89,Beed,3.6,Local,Packaging
+90,Supplier 90,Nanded,4.2,International,Metals
+91,Supplier 91,Karimnagar,3.7,Local,Industrial Materials
+92,Supplier 92,Nizamabad,3.8,Local,Polymers
+93,Supplier 93,Adilabad,3.9,International,Chemicals
+94,Supplier 94,Khammam,4.1,Local,Packaging
+95,Supplier 95,Nellore,3.6,Local,Metals
+96,Supplier 96,Kakinada,4.0,International,Industrial Materials
+97,Supplier 97,Eluru,3.8,Local,Polymers
+98,Supplier 98,Ongole,3.7,Local,Packaging
+99,Supplier 99,Kurnool,4.2,International,Chemicals
+100,Supplier 100,Anantapur,3.9,Local,Metals

@@ -1,0 +1,11 @@
+product_id,name,category
+1,Steel,Metals
+2,Copper,Metals
+3,Aluminum,Metals
+4,Plastic,Polymers
+5,Rubber,Polymers
+6,Glass,Industrial Materials
+7,Chemicals,Chemicals
+8,Textiles,Industrial Goods
+9,Electronics Components,Electronics
+10,Packaging Materials,Packaging
