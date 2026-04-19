@@ -291,16 +291,30 @@ This project directly addresses the procurement problem by:
 ## 17. How to Run
 
 # macOS / Linux
+
 python3 -m venv venv
+
 source venv/bin/activate
+
 pip install -r requirements.txt
+
 python3 -m streamlit run app.py
 
 # Windows (PowerShell)
+
 python -m venv venv
+
 venv\Scripts\activate
+
 pip install -r requirements.txt
+
 python -m streamlit run app.py
+
+After running the final command, open:
+
+http://localhost:8501
+
+in your browser to access the application.
 
 ##  18. Author
 
