@@ -1,4 +1,4 @@
-# ⚙️ Procurement Reliability Dashboard
+#  Procurement Reliability Dashboard
 
 ##  1. Problem Statement
 
@@ -20,7 +20,7 @@ To design and implement a system that:
 * Analyzes supplier performance using historical procurement data
 * Computes a **reliability score** for each supplier
 * Classifies suppliers into risk categories
-* Uses machine learning to predict delays
+* Uses machine learning to predict delays and forecast trends
 * Provides an interactive dashboard for decision-making
 
 ---
@@ -45,7 +45,7 @@ The project follows a **modular architecture**, ensuring separation of concerns:
 Data Layer        → CSV files (Suppliers, Orders, Products, Order Details)
 Processing Layer  → Delay & cost computation
 Analytics Layer   → Scoring + Risk classification
-ML Layer          → Delay prediction
+ML Layer          → Delay prediction (Random Forest) + Trend forecasting (Linear Regression)
 Presentation Layer→ Streamlit Dashboard
 ```
 
@@ -161,17 +161,46 @@ Suppliers are classified as:
 
 ---
 
-## 🤖 10. Machine Learning Component
+##  10. Machine Learning Components
 
-A **Linear Regression model** is used to predict supplier delay based on:
+Two ML models are used in this project:
 
-* Average Cost
-* Supplier Rating
+### Model 1: Random Forest Regressor (Delay Prediction)
 
-### Purpose:
+A **Random Forest Regressor** (100 estimators) is trained to predict the expected delivery delay for any supplier profile.
 
-* Demonstrates predictive capability
-* Adds intelligence to procurement decisions
+**Features used:**
+* Average Cost (`avg_cost`)
+* On-Time Delivery Rate (`on_time_rate`)
+
+**Target:** Average delay in days (`avg_delay`)
+
+**Training setup:**
+* 80/20 train-test split
+* Evaluated using RMSE (displayed as a KPI in the dashboard)
+
+**Where it's used:** Simulation & ML tab — users can input hypothetical supplier values to get a predicted delay.
+
+**Why Random Forest?**
+* Handles non-linear relationships between cost, reliability, and delay
+* More robust to outliers compared to linear models
+* Consistently higher accuracy on supplier performance data
+
+---
+
+### Model 2: Linear Regression (Trend Forecasting)
+
+A **Linear Regression model** is fit on monthly historical data to forecast future on-time delivery rates.
+
+**Feature:** Month index (time-based)
+
+**Target:** Monthly average on-time rate
+
+**Where it's used:** Forecast section of the Simulation & ML tab — projects the on-time rate trend forward into upcoming months.
+
+**Why Linear Regression?**
+* Simple and interpretable for time-series trend extrapolation
+* Appropriate when the goal is directional forecasting, not precision prediction
 
 ---
 
@@ -186,8 +215,8 @@ The dashboard includes:
 
 ### 🔹 Advanced Visuals
 
-* Top 10 Suppliers (ranking) 
-* Risk Distribution 
+* Top 10 Suppliers (ranking)
+* Risk Distribution
 
 ---
 
@@ -204,8 +233,8 @@ Instead of plotting all 100 suppliers (which caused clutter), we:
 
 The dashboard uses:
 
-* Dark theme 🌑
-* Metallic styling ⚙️
+* Dark theme 
+* Metallic styling 
 * Minimal layout
 
 ### Goals:
@@ -233,7 +262,7 @@ The system answers:
 * ✔ Realistic delay handling (no negative delays)
 * ✔ Stable normalization techniques
 * ✔ Modular architecture (industry-style design)
-* ✔ Integration of ML with analytics
+* ✔ Two ML models — prediction and forecasting
 * ✔ Clean, decision-focused dashboard
 
 ---
@@ -274,8 +303,8 @@ This project directly addresses the procurement problem by:
 
 * Classification model for risk prediction
 * More features (supplier type, category)
-* Model evaluation metrics
-* Time-series forecasting
+* Additional model evaluation metrics
+* Longer time-series forecasting window
 
 ---
 
@@ -290,28 +319,23 @@ This project directly addresses the procurement problem by:
 
 ## 17. How to Run
 
+```bash
 # macOS / Linux
-
 python3 -m venv venv
-
 source venv/bin/activate
-
 pip install -r requirements.txt
-
 python3 -m streamlit run app.py
 
 # Windows (PowerShell)
-
 python -m venv venv
-
 venv\Scripts\activate
-
 pip install -r requirements.txt
-
 python3 -m streamlit run app.py
+```
 
+---
 
-##  18. Author
+##  18. Authors
 
 **Rachana Ramchandar - PES1UG23CS459**
 
